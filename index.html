@@ -159,7 +159,8 @@ if(entered===correctPassword){
 document.getElementById("lock").style.display="none";
 document.getElementById("main").style.display="block";
 typeEffect();
-document.getElementById("music").play();
+let music = document.getElementById("music");
+music.play().catch(()=>{});
 }else{
 alert("Wrong password 😜 Try again!");
 }
@@ -223,4 +224,5 @@ setTimeout(()=>{heart.remove();},5000);
 </script>
 
 </body>
+
 </html>
